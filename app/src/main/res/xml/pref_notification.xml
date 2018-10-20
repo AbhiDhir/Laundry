@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="notifications_new_message"
+        android:title="Enable Notifications"
+        android:summary="Turn on notifications for when laundry becomes open"/>
+    <ListPreference
+        android:defaultValue="Select Floor"
+        android:entries="@array/planets_array"
+        android:entryValues="@array/planets_array"
+        android:key="floor"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="Floor Number" />
+
+</PreferenceScreen>
