@@ -17,13 +17,24 @@
             android:layout_height="wrap_content"
             android:textSize="50dp"
             android:layout_margin="20dp"
+            android:layout_marginBottom="5dp"
             android:gravity="center"
             android:textColor="@color/colorPrimaryDark"
             android:text="UT Laundry" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            android:layout_margin="0dp"
+            app:srcCompat="@drawable/logo" />
+
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:entries="@array/planets_array"
             android:layout_gravity="center" />

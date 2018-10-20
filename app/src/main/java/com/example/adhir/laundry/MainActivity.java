@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
                 PreferenceManager.getDefaultSharedPreferences(this);
         Boolean switchPref = sharedPref.getBoolean
                 ("notifications_new_message", false);
-        String marketPref = sharedPref.getString("floor", "-1");
+        String marketPref = sharedPref.getString("floor", "Select Floor");
         if(marketPref.toString().equals("Select Floor")){
             setContentView(R.layout.activity_main);
         } else {
@@ -34,10 +34,16 @@ public class MainActivity extends AppCompatActivity {
         String text = mySpinner.getSelectedItem().toString();
 
         if(text.equals("Select Floor")){
-            
+            Toast.makeText(this, "Please Select a Floor Number", Toast.LENGTH_LONG).show();
+        } else {
+            SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putString("floor",text);
+            editor.commit();
+
+            Intent intentMain = new Intent(MainActivity.this ,
+                    Navigation.class);
+            MainActivity.this.startActivity(intentMain);
         }
-        Intent intentMain = new Intent(MainActivity.this ,
-                Navigation.class);
-        MainActivity.this.startActivity(intentMain);
     }
 }
