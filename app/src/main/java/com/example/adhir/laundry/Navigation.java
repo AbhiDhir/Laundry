@@ -72,6 +72,10 @@ public class Navigation extends AppCompatActivity
             Intent intentMain = new Intent(Navigation.this ,
                     SettingsActivity.class);
             Navigation.this.startActivity(intentMain);
+        } else if(id == R.id.nav_display){
+            Intent intentMain = new Intent(Navigation.this ,
+                    Display.class);
+            Navigation.this.startActivity(intentMain);
         }
         /* if (id == R.id.nav_camera) {
             // Handle the camera action

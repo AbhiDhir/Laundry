@@ -3,8 +3,7 @@
     package="com.example.adhir.laundry">
 
     <application
-    <uses-permission android:name="android.permission.INTERNET" />
-    android:allowBackup="true"
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_launcher"
@@ -19,11 +18,11 @@
         </activity>
         <activity
             android:name=".Navigation"
-            android:label="@string/title_activity_navigation">
-        </activity>
+            android:label="@string/title_activity_navigation"></activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".Display"></activity>
     </application>
 
 </manifest>

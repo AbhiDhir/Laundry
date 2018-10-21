@@ -9,12 +9,16 @@ import android.util.Log;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PreferenceManager.setDefaultValues(this, R.xml.pref_notification, false);
+        // Write a message to the database
         SharedPreferences sharedPref =
                 PreferenceManager.getDefaultSharedPreferences(this);
         Boolean switchPref = sharedPref.getBoolean

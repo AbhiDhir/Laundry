@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "597694421566",
+    "firebase_url": "https://utlaundry-b55ef.firebaseio.com",
+    "project_id": "utlaundry-b55ef",
+    "storage_bucket": "utlaundry-b55ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597694421566:android:e30aeb9700703691",
+        "android_client_info": {
+          "package_name": "com.example.adhir.laundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597694421566-u9tro9n4brft0mirigu5jsll5du5i2ub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adhir.laundry",
+            "certificate_hash": "5db475168a6693b24e39d54f32aa93db3ce725eb"
+          }
+        },
+        {
+          "client_id": "597694421566-kpi1niit97oh5rhfchv1rjbn9glbs2kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbSrmuQtW_ds3--baxo9yIY2MvlYIAJpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597694421566-kpi1niit97oh5rhfchv1rjbn9glbs2kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
