@@ -3,7 +3,8 @@
     package="com.example.adhir.laundry">
 
     <application
-        android:allowBackup="true"
+    <uses-permission android:name="android.permission.INTERNET" />
+    android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_launcher"
